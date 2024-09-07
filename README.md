@@ -42,7 +42,7 @@ Dlam可从**hunter**、**quake**、**fofa**等**网络空间测绘平台探测�
 
 6、配置好之后，直接./dlam无命令启动程序，就可以通过互联网IP:PORT来访问本地服务了
 
-![image-20240907222957089](/Users/freebuf/Desktop/go/dlam/dlam_1.1_darwin_arm64/images/start.png)
+![image-20240907222957089](images/start.png)
 
 ### 0x03 效果举例
 
