@@ -1,0 +1,47 @@
+myPortList = [19527, 4589, 9876, 9111]#计划映射到互联网IP时，互联网IP的端口，需要修改，避免互联网IP已经使用相关端口
+whoseInternetAddress = []#此处勿动，程序探测后，会把可用的互联网IP写回此处，下次启动会取出检测可用性
+
+[[dnats]]#可配置多个
+remoteIP = '47.xxx.xx.52'#check命令后，从whoseInternetAddress中取可用IP放到此处
+
+[[dnats.mappings]]#可配置多个
+localPort = 8080#本地端口
+remotePort = 19527#remoteIP上的端口，等于是把localPort映射到了remoteIP:remotePort，下面同理，
+
+[[dnats.mappings]]
+localPort = 8081
+remotePort = 4589
+
+[[dnats]]
+remoteIP = '121.xxx.192.xxx'
+
+[[dnats.mappings]]
+localPort = 8080
+remotePort = 9876
+
+[[dnats.mappings]]
+localPort = 1433
+remotePort = 9111
+
+#空间测绘平台的配置信息及开关，switch='open'时，会取数据进行检测
+[FOFA]
+switch = 'close'
+apiUrl = 'https://fofa.info/api/v1/search/all'
+email = 'xxxxxx@xxxx.com'
+key = '54eddxxxxxxxxxxxxx49xxxxxxx6612'
+queryString = 'app="frp" && port=="7000"'
+resultSize = 300
+
+[QUAKE]
+switch = 'close'
+apiUrl = 'https://quake.360.net/api/v3/search/quake_service'
+key = '962xxxxx36-xxxxx-40c4-8c98-5exxxxxb0a'
+queryString = 'service:"frp" and port:7000'
+resultSize = 300
+
+[HUNTER]
+switch = 'close'
+apiUrl = 'https://hunter.qianxin.com/openApi/search'
+key = '9c1xxx0442xxxxxxxxxxc23fxxxx9fbbxxxxxxxxxf7f9xxxxx18'
+queryString = 'protocol=="frp"&&ip.port="7000"'
+resultSize = 200
