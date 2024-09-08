@@ -1,6 +1,6 @@
 <img src="images/dlam.png" width="18%" height="18%"/>
 
-Dlam可从**hunter**、**quake**、**fofa**等**网络空间测绘平台探测互联网IP**，检测其中可使用的互联网IP，并通过本工具配置文件中的端口映射关系，把本地端口映射到互联网IP指定的端口，以便通过互联网IP访问本地端口服务。本工具基于[frp](https://github.com/fatedier/frp)修改。
+Dlam可从**hunter**、**quake**、**fofa**等**网络空间测绘平台收集、探测互联网IP**，检测其中可使用的IP，并通过本工具配置文件中的端口映射关系，把本地端口映射到互联网IP指定的端口，以便通过互联网IP访问本地端口服务。本工具基于[frp](https://github.com/fatedier/frp)修改。
 > **开发不易,如果觉得该项目对您有帮助, 麻烦点个Star吧**
 
 ### 0x01 说明
